@@ -8,13 +8,13 @@
 Summary:	Sub::Quote - Efficient generation of subroutines via string eval
 Summary(pl.UTF-8):	Sub::Quote - wydajne generowanie podprocedur poprzez ewaluację łańcuchów znaków
 Name:		perl-Sub-Quote
-Version:	2.005001
+Version:	2.006006
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Sub/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	1b0f288ca8c60243f9bc29cfee4c4986
+# Source0-md5:	1bb9caee697bcfa738f419d40505e506
 URL:		https://metacpan.org/release/Sub-Quote/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
