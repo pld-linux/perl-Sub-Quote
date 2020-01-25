@@ -4,7 +4,6 @@
 #
 %define		pdir	Sub
 %define		pnam	Quote
-%include	/usr/lib/rpm/macros.perl
 Summary:	Sub::Quote - Efficient generation of subroutines via string eval
 Summary(pl.UTF-8):	Sub::Quote - wydajne generowanie podprocedur poprzez ewaluację łańcuchów znaków
 Name:		perl-Sub-Quote
