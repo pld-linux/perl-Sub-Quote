@@ -1,24 +1,26 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	Sub
 %define		pnam	Quote
 Summary:	Sub::Quote - Efficient generation of subroutines via string eval
 Summary(pl.UTF-8):	Sub::Quote - wydajne generowanie podprocedur poprzez ewaluację łańcuchów znaków
 Name:		perl-Sub-Quote
-Version:	2.006006
+Version:	2.006009
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Sub/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	1bb9caee697bcfa738f419d40505e506
-URL:		https://metacpan.org/release/Sub-Quote
+Source0:	https://www.cpan.org/modules/by-module/Sub/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	8f4600b812f6106a1f907ee47a87bd1d
+URL:		https://metacpan.org/dist/Sub-Quote
+BuildRequires:	perl-ExtUtils-MakeMaker
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
+BuildRequires:	perl-Scalar-List-Utils
 BuildRequires:	perl-Test-Fatal >= 0.003
 BuildRequires:	perl-Test-Simple >= 0.94
 %endif
